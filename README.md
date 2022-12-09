@@ -1,6 +1,6 @@
 ## Weather - TDD.
 
-A simple project in my journey of learning Test-driven development (TDD), Tests and Clean Architecture in Flutter.
+A simple project in my journey of learning Test-driven development (TDD), Testing and Clean Architecture in Flutter.
 
 - Weather App.
 - Bloc State Management.
@@ -79,3 +79,21 @@ It is difficult to test all possible success and failure scenarios by using a li
 Therefore, rather than relying on a live web service or database, you can “mock” these dependencies. Mocks allow emulating a live web service or database and return specific results depending on the situation.
 
 [Continue Reading](https://docs.flutter.dev/cookbook/testing/unit/mocking)
+
+#### Widget testing
+
+To test widget classes, you need a few additional tools provided by the flutter_test package, which ships with the Flutter SDK.
+
+##### The flutter_test package provides the following tools for testing widgets:
+
+- The WidgetTester allows building and interacting with widgets in a test environment.
+- The testWidgets() function automatically creates a new WidgetTester for each test case, and is used in place of the normal test() function.
+- The Finder classes allow searching for widgets in the test environment.
+- Widget-specific Matcher constants help verify whether a Finder locates a widget or multiple widgets in the test environment.
+
+[Continue Reading](https://docs.flutter.dev/cookbook/testing/widget/introduction)
+
+#### get_it.
+This is a simple Service Locator for Dart and Flutter projects with some additional goodies highly inspired by Splat. It can be used instead of InheritedWidget or Provider to access objects e.g. from your UI.
+
+[Continue Reading](https://pub.dev/packages/get_it)
