@@ -1,4 +1,4 @@
-# weather_tdd
+## Weather - TDD.
 
 A simple project in my journey of learning Test-driven development (TDD), Tests and Clean Architecture in Flutter.
 
@@ -52,10 +52,10 @@ Code is refactored for readability and maintainability. In particular, hard-code
 - splitting methods into smaller pieces.
 - re-arranging inheritance hierarchies.
 
+<br />
 
 ### Other Related Concepts.
 
-<br />
 
 #### Unit Testing
 
