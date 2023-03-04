@@ -6,7 +6,7 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_tdd/domain/entities/weather.dart';
 import 'package:weather_tdd/presentation/bloc/weather_bloc.dart';
-import 'package:weather_tdd/presentation/screens/weather_screen.dart';
+import 'package:weather_tdd/presentation/screens/weather/weather_screen.dart';
 
 interface class MockWeatherBloc extends MockBloc<WeatherEvent, WeatherState>
     implements WeatherBloc {}
@@ -31,11 +31,11 @@ void main() {
   const testWeather = WeatherEntity(
     cityName: 'Cairo',
     main: 'Clouds',
-    description: 'few clouds',
-    iconCode: '02d',
-    temperature: 304.28,
-    pressure: 1007,
-    humidity: 74,
+    description: 'overcast clouds',
+    iconCode: '04n',
+    temperature: 301.57,
+    pressure: 1016,
+    humidity: 42,
   );
 
   testWidgets(
@@ -77,6 +77,7 @@ void main() {
 
       //act
       await widgetTester.pumpWidget(_makeTestWidget(const WeatherScreen()));
+      await widgetTester.pumpAndSettle(const Duration(seconds:1));
 
       //assert
       expect(find.byKey(const Key('weather_data')), findsOneWidget);

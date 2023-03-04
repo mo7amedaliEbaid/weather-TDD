@@ -1,6 +1,7 @@
 
 
 import 'dart:convert';
+import 'dart:developer';
 
 import '../../core/consts/consts.dart';
 import '../../core/error/exception.dart';
@@ -23,6 +24,7 @@ interface class WeatherRemoteDataSourceImpl extends WeatherRemoteDataSource {
     await client.get(Uri.parse(URLS.currentWeatherByName(cityName)));
 
     if (response.statusCode == 200) {
+      log(response.body);
       return WeatherModel.fromJson(json.decode(response.body));
     } else {
       throw ServerException();
