@@ -5,8 +5,8 @@ A new Flutter project.
 
 ### Test-driven development (TDD).
 
-<p float="center">
-   <img src="https://github.com/mo7amedaliEbaid/weather-TDD/blob/d347e3c95e1aa601b41b1493d25107ca64465786/screenshots/tdd.png" width="270" />
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/weather-TDD/blob/d347e3c95e1aa601b41b1493d25107ca64465786/screenshots/tdd.png" width="570" height="400" />
 </p>
 
 
