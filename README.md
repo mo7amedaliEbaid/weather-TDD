@@ -13,7 +13,7 @@ A simple project in my journey of learning Test-driven development (TDD), Tests 
 ### Test-driven development (TDD).
 
 <p float="left">
-   <img src="https://github.com/mo7amedaliEbaid/weather-TDD/blob/d347e3c95e1aa601b41b1493d25107ca64465786/screenshots/tdd.png" width="670" height="500" />
+   <img src="https://github.com/mo7amedaliEbaid/weather-TDD/blob/d347e3c95e1aa601b41b1493d25107ca64465786/screenshots/tdd.png" width="670" height="650" />
 </p>
 
 
@@ -27,15 +27,15 @@ Test-driven development is related to the test-first programming concepts of ext
 ### Test-driven development cycle.
 
 1. Add a test.
-
 <br />
 The adding of a new feature begins by writing a test that passes if the feature's specifications are met. The developer can discover these specifications by asking about use cases and user stories. A key benefit of test-driven development is that it makes the developer focus on requirements before writing code. This is in contrast with the usual practice, where unit tests are only written after code.
+
 <br />
 
 2. Run all tests. The new test should fail for expected reasons.
-
 <br />
 This shows that new code is actually needed for the desired feature. It validates that the test harness is working correctly. It rules out the possibility that the new test is flawed and will always pass.
+
 <br />
 
 3. Write the simplest code that passes the new test.
