@@ -1,1 +1,1 @@
-sealed class ServerException implements Exception {}
+interface class ServerException implements Exception {}

@@ -2,15 +2,18 @@
 
 A new Flutter project.
 
-## Getting Started
+### Unit Tessting
+How can you ensure that your app continues to work as you add more features or change existing functionality? By writing tests.
 
-This project is a starting point for a Flutter application.
+Unit tests are handy for verifying the behavior of a single function, method, or class. The test package provides the core framework for writing unit tests, and the flutter_test package provides additional utilities for testing widgets.
+https://docs.flutter.dev/cookbook/testing/unit/introduction
 
-A few resources to get you started if this is your first Flutter project:
+### Mock dependencies using Mockito
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Sometimes, unit tests might depend on classes that fetch data from live web services or databases. This is inconvenient for a few reasons:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Calling live services or databases slows down test execution.
+A passing test might start failing if a web service or database returns unexpected results. This is known as a “flaky test.”
+It is difficult to test all possible success and failure scenarios by using a live web service or database.
+Therefore, rather than relying on a live web service or database, you can “mock” these dependencies. Mocks allow emulating a live web service or database and return specific results depending on the situation.
+https://docs.flutter.dev/cookbook/testing/unit/mocking
