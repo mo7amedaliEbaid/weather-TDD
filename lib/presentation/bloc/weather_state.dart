@@ -1,6 +1,5 @@
 part of 'weather_bloc.dart';
 
-
 @immutable
 abstract class WeatherState extends Equatable {
   const WeatherState();
@@ -9,11 +8,11 @@ abstract class WeatherState extends Equatable {
   List<Object?> get props => [];
 }
 
-class WeatherEmpty extends WeatherState {}
+interface class WeatherEmpty extends WeatherState {}
 
-class WeatherLoading extends WeatherState {}
+interface class WeatherLoading extends WeatherState {}
 
-class WeatherLoaded extends WeatherState {
+interface class WeatherLoaded extends WeatherState {
   final WeatherEntity result;
 
   const WeatherLoaded(this.result);
@@ -22,7 +21,7 @@ class WeatherLoaded extends WeatherState {
   List<Object?> get props => [result];
 }
 
-class WeatherFailure extends WeatherState {
+interface class WeatherFailure extends WeatherState {
   final String message;
 
   const WeatherFailure(this.message);

@@ -5,17 +5,17 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import '../../domain/entities/weather.dart';
 import '../../domain/usecases/get_weather.dart';
+
 part 'weather_event.dart';
 
 part 'weather_state.dart';
 
-class WeatherBloc extends Bloc<WeatherEvent,WeatherState> {
-  
+interface class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
   final GetWeatherUseCase _getWeatherUseCase;
+
   WeatherBloc(this._getWeatherUseCase) : super(WeatherEmpty()) {
     on<OnCityChangedEvent>(
       (event, emit) async {
-
         emit(WeatherLoading());
         final result = await _getWeatherUseCase.execute(event.cityName);
         result.fold(
@@ -33,5 +33,5 @@ class WeatherBloc extends Bloc<WeatherEvent,WeatherState> {
 }
 
 EventTransformer<T> debounce<T>(Duration duration) {
-    return (events, mapper) => events.debounceTime(duration).flatMap(mapper);
-  }
+  return (events, mapper) => events.debounceTime(duration).flatMap(mapper);
+}

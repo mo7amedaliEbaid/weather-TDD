@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-### Unit Tessting
+### Unit Testing
 How can you ensure that your app continues to work as you add more features or change existing functionality? By writing tests.
 
 Unit tests are handy for verifying the behavior of a single function, method, or class. The test package provides the core framework for writing unit tests, and the flutter_test package provides additional utilities for testing widgets.

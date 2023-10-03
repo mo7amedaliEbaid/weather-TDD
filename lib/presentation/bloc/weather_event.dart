@@ -1,6 +1,5 @@
 part of 'weather_bloc.dart';
 
-
 @immutable
 abstract class WeatherEvent extends Equatable {
   const WeatherEvent();
@@ -9,7 +8,7 @@ abstract class WeatherEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class OnCityChangedEvent extends WeatherEvent {
+interface class OnCityChangedEvent extends WeatherEvent {
   final String cityName;
 
   const OnCityChangedEvent(this.cityName);
