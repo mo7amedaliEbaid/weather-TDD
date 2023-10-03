@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-interface class WeatherEntity extends Equatable {
+ class WeatherEntity extends Equatable {
 
   const WeatherEntity({
     required this.cityName,
