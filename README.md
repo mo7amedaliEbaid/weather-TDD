@@ -1,6 +1,6 @@
 ## Weather - TDD.
 
-A simple project in my journey of learning Test-driven development (TDD), Testing and Clean Architecture in Flutter.
+A simple project in my journey of learning Test-driven development (TDD) and Tests and in Flutter.
 
 - Weather App.
 - Bloc State Management.
