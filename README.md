@@ -9,6 +9,9 @@ A simple project in my journey of learning Test-driven development (TDD) and Tes
 - Clean Architecture.
 - TDD.
 
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/weather-TDD/blob/506c56d2c8c3a6fdf97bda10991b1592ed884cf6/screenshots/alltestspassed.png" width="700" height="500" />
+</p>
 
 #### screenshots [Here](https://github.com/mo7amedaliEbaid/weather-TDD/blob/ec3811c9fe871a5f8d0ce10a08773be028416024/screenshots)
 
