@@ -20,7 +20,7 @@ A simple project in my journey of learning Test-driven development (TDD) and Tes
 ### Test-driven development (TDD).
 
 <p float="left">
-   <img src="https://github.com/mo7amedaliEbaid/weather-TDD/blob/ec3811c9fe871a5f8d0ce10a08773be028416024/learn_tdd/tdd1.png" width="600" height="400" />
+   <img src="https://github.com/mo7amedaliEbaid/weather-TDD/blob/ec3811c9fe871a5f8d0ce10a08773be028416024/learn_tdd/tdd1.png" width="700" height="300" />
 </p>
 
 
